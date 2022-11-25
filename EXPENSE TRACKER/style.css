@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --box-shadow: 0 1px 3px rgba(0, 0, 0, 12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7f7f7f7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.sort-btn{
+    border: none;
+    background-color:#2ecc71 ;
+    color: #fff;
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.sort-btn:focus{
+    outline: none;
+}
+.tracker{
+    text-align: center;
+
+}
+.error{
+    color: red;
+    font-size: 20px;
+}
+.inc-exp-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+}
+.inc-exp-container > div{
+    flex: 1;
+    text-align: center;
+}
+.inc-exp-container > div:first-of-type{
+    border-right:  2px solid #333;
+}
+.money-income{
+    color: #2ecc71;
+}
+.money-expense{
+    color: #c22210;
+}
+.history, .transaction{
+    border-bottom:1px solid #333 ;
+    padding-bottom: 10px;
+}
+li{
+    list-style: none;
+    background-color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    position: relative;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; 
+
+}
+.list-minus{
+    border-right: 5px solid #c22210;
+}
+.list-plus{
+    border-right: 5px solid #2ecc71;
+}
+.delete-btn{
+    position: absolute;
+    font-size: 16px;
+    background-color: red;
+    border: none;
+    padding: 5px 10px;
+    transform: translate(-170%, -10%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+    color: #fff;
+
+}
+li:hover .delete-btn{
+    opacity: 1;
+}
+label{
+    display: inline-block;
+    font-size: 20px;
+}
+input{
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+.transaction-btn{
+    color: #fff;
+    background-color:rgb(182, 41, 88);
+    border: none;
+    font-size: 20px;
+    padding: 15px 5px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom:30px ;
+    cursor: pointer;
+}
+.transaction-btn:focus{
+    outline: none;
+}
+@media(max-width:370px){
+    li{
+        width: 250px;
+        margin: auto;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="tracker">EXPENSE TRACKER</h1>
+        <h1 class="balances">Your balance</h1>
+           <h1 class="balance">$0.00</h1>
+        <div class="inc-exp-container">
+            <div>
+                <h2>INCOME</h2>
+           <h1 class="money-income">$0.00</h1>
+            </div>
+            <div>
+                <h2>EXPENSE</h2>
+           <h1 class="money-expense">$0.00</h1>
+            </div>
+        </div>
+        <div class="hist">
+            <h2 class="history">History</h2>
+            <button class="sort-btn">Sort By Price</button>
+        </div>
+        <ul class="list">
+            <li class="list-minus"><span></span><button class="delete-btn">x</button></li>
+        </ul>
+            <h2 class="transaction">Add New Transaction</h2>
+            <form id="form">
+            <div class="form-control">
+                <label for="text">Text</label>
+                <input type="text" placeholder="Enter Text" class="item-text">
+            </div>
+            <div class="form-control">
+                <label for="number">Amount <br>(negative - expense, positve - income)</label>
+                <input type="number" placeholder="Enter Amount" class="item-money">
+            </div>
+            <button class="transaction-btn">Add Transaction</button>
+            </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

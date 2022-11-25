@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(183, 236, 231);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+.fa-check{
+    float: right;
+    transform: translateY(-200%);
+    color: #2ecc71;
+    display: none;
+    margin-right: 20px;
+}
+.show-answer{
+    float: right;
+    transform: translateY(-200%);
+    color: #333;
+    display: none;
+    margin-right: 20px;
+}
+.fa-times{
+    color: red;
+    float: right;
+    transform: translateY(-200%);
+    display: none;
+    margin-right: 20px;
+}
+
+.fa-check.show, .fa-times.show , .show-answer.show{
+    display: block;
+} 
+
+.button{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+
+}
+.repeat{
+    text-decoration: none;
+    background-color: #6f56eb;
+    color: #fff;
+    border: 0;
+    display: none;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    
+}
+.repeat.show{
+    display: block;
+}
+button{
+    background-color: #6f56eb;
+    color: #fff;
+    border: 0;
+    display: block;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:focus{
+    outline: none;
+}
+.result-container{
+    background-color: rgb(9, 9, 44);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.result-container.show{
+    display: flex;
+}
+.time{
+    position: fixed;
+    top: 0;
+    margin-top: 20px;
+    right: 20px;
+    font-size: 30px;
+    z-index: 10;
+    color: green;
+}
+
+/* Media Query */
+@media(max-width:800px){
+    body{
+        margin-left: 20px;
+    }
+    .button{
+        transform: translateX(-10px);
+      }
+}
+@media(max-width:600px){
+    body{
+        margin-left: 20px;
+    }
+    .button{
+        width: 75%;
+      }
+}
+@media(max-width:500px){
+    .button{
+        width: 100%;
+    }
+    .result-container{
+        margin-right: 20px;
+    }
+}

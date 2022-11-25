@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HANGMAN GAME</title>
+</head>
+<body>
+    <header id="header">
+        <h1>HANGMAN GAME</h1>
+        <p>Guess The Programming Language</p>
+    </header>
+    <div class="game-container">
+        <svg class="figure-container" height="250" width="200">
+            <!-- Rod -->
+         <line x1="60" y1="20" x2="140" y2="20"></line>
+         <line x1="140" x2="140" y1="20" y2="50"></line>
+         <line x1="60"x2="60" y1="20" y2="200" ></line>
+         <line x1="20" x2="100" y1="200" y2="200"></line>
+         <!-- Head -->
+         <circle cx="140" cy="70" r="20" class="figure-part"></circle>
+         <!-- Body -->
+         <line x1="140" x2="140" y1="90" y2="130" class="figure-part"></line>
+         <line x1="140" x2="120" y1="120" y2="100" class="figure-part"></line>
+         <line x1="140" x2="160" y1="120" y2="100" class="figure-part"></line>
+         <!-- Legs -->
+         <line x1="140" x2="120" y1="130" y2="170" class="figure-part"></line>
+         <line x1="140" x2="160" y1="130" y2="170" class="figure-part"></line>
+        </svg>
+        <!-- Wrong Letters Contianer -->
+        <div class="wrong-letters-container">
+            <div class="wrong-letters">
+                
+            </div>
+        </div>
+        <div class="word">
+        </div>
+        <!-- Buttons To Press -->
+        <div class="btns">
+            <button id="btn">A</button>
+            <button id="btn">B</button>
+            <button id="btn">C</button>
+            <button id="btn">D</button>
+            <button id="btn">E</button>
+            <button id="btn">F</button>
+            <button id="btn">G</button>
+            <button id="btn">H</button>
+            <button id="btn">I</button>
+            <button id="btn">J</button>
+            <button id="btn">K</button>
+            <button id="btn">L</button>
+            <button id="btn">M</button>
+            <button id="btn">N</button>
+            <button id="btn">O</button>
+            <button id="btn">P</button>
+            <button id="btn">Q</button>
+            <button id="btn">R</button>
+            <button id="btn">S</button>
+            <button id="btn">T</button>
+            <button id="btn">U</button>
+            <button id="btn">V</button>
+            <button id="btn">W</button>
+            <button id="btn">X</button>
+            <button id="btn">Y</button>
+            <button id="btn">Z</button>
+        </div>
+    </div>
+    <!-- Container for final message -->
+    <div class="popup">
+        <div class="show-win">
+            <h2>You Won</h2>
+            <button id="play-button">Play Again</button>
+        </div>
+    </div>
+    <!-- Notification -->
+    <div class="notification-container">
+        <p>You Have Already Entered This Letter</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

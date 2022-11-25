@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+}
+.play{
+    display: inline-block;
+    width: 200px;
+    font-size: 25px;
+    background-color: green;
+    border: lightblue 2px solid;
+    border-radius:10px;
+    color: #000;
+}
+.show{
+   display: none;
+    text-align: center;
+}
+.play:hover{
+    color: white;
+}
+.center{
+    margin-top: 100px;
+    background-color: rgb(233, 128, 128);
+    display: inline-block;
+    width: 500px;
+    height: 400px;
+}
+button{
+    border: none;
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    margin-left:20px ;
+    margin-right:20px ;
+    font-size: 30px;
+    color: transparent;
+    cursor: pointer;
+}
+.winner{
+    color: green;
+}
+
+/* Media Query */
+@media(max-width:600px){
+    h1{
+        font-size: 20px;
+    }
+    .center{
+        width: 400px;
+        height: 350px;
+    }
+}
+@media(max-width:450px){
+    h1{
+        font-size: 20px;
+    }
+    .center{
+        width: 300px;
+        height: 300px;
+    }
+    button{
+        width: 30px;
+        height: 30px;
+    }
+}

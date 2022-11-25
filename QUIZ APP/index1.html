@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+     integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+     crossorigin="anonymous"
+   />
+    <link rel="stylesheet" href="style1.css">
+    <title>JS QUIZ APP</title>
+</head>
+<body>
+    <!-- The Result Box-->
+    <div class="result-container">
+        <h1>RESULT</h1>
+        <p class="show-score"></p>
+        <button class="correction">CHECK RESULT</button>
+    </div>
+    <div class="body">
+    <div class="quiz-container">
+        <form>
+        <div class="quiz">
+            <label for="">1</label>
+            Who Made Javascript
+            <br>
+            <input type="radio" name="q1" id="" value="A">Brendan Eich
+            <br>
+            <input type="radio" name="q1" id="" value="B">James Gosling
+            <br>
+            <input type="radio" name="q1" id="" value="C">Dennis Richie
+            <br>
+            <input type="radio" name="q1" id="" value="D">Niklaus Wirth
+            <div><i class="fas fa-check"></i></div>
+            <div><i class="fas fa-times"></i></div>
+            <div class="show-answer"></div>
+        </div>
+        <br>
+        <div class="quiz">
+            <label for="">2</label>
+            How do you declare a variable in Javascript
+            <br>
+            <input type="radio" name="q2" id="" value="A">vars name
+            <br>
+            <input type="radio" name="q2" id="" value="B">const name
+            <br>
+            <input type="radio" name="q2" id="" value="C">consts name
+            <br>
+            <input type="radio" name="q2" id="" value="D">lets name
+            <div><i class="fas fa-check"></i></div>
+            <div><i class="fas fa-times"></i></div>
+            <div class="show-answer"></div>
+        </div>
+        <br>
+        <div class="quiz">
+            <label for="">3</label>
+            What is the correct syntax to log out data on the browser?
+            <br>
+            <input type="radio" name="q3" id="" value="A">console.log()
+            <br>
+            <input type="radio" name="q3" id="" value="B">log.console()
+            <br>
+            <input type="radio" name="q3" id="" value="C">console.log{}
+            <br>
+            <input type="radio" name="q3" id="" value="D">log.data()
+            <div><i class="fas fa-check"></i></div>
+            <div><i class="fas fa-times"></i></div>
+            <div class="show-answer"></div>
+        </div>
+        <br>
+        <div class="quiz">
+            <label for="">4</label>
+            Which one of these is a javascript package manager
+            <br>
+            <input type="radio" name="q4" id="" value="A">function addNum{}
+            <br>
+            <input type="radio" name="q4" id="" value="B">function addNum()
+            <br>
+            <input type="radio" name="q4" id="" value="C">function addNum{)
+            <br>
+            <input type="radio" name="q4" id="" value="D">function addNum(){}
+            <div><i class="fas fa-check"></i></div>
+            <div><i class="fas fa-times"></i></div>
+            <div class="show-answer"></div>
+        </div>
+        <br>
+        <div class="quiz">
+            <label for="">5</label>
+            Which one of these is a javascript package manager
+            <br>
+            <input type="radio" name="q5" id="" value="A">Node.js
+            <br>
+            <input type="radio" name="q5" id="" value="B">Typescript
+            <br>
+            <input type="radio" name="q5" id="" value="C">Babel
+            <br>
+            <input type="radio" name="q5" id="" value="D">npm
+            <div><i class="fas fa-check"></i></div>
+            <div><i class="fas fa-times"></i></div>
+            <div class="show-answer"></div>
+        </div>
+        <br>
+        <div class="quiz">
+            <label for="">6</label>
+            What is the correct for loop syntax?
+            <br>
+            <input type="radio" name="q6" id="" value="A">for(let i = 0; i > 0; i++);
+            <br>
+            <input type="radio" name="q6" id="" value="B">for(let i = 0, i > 0; i++);
+            <br>
+            <input type="radio" name="q6" id="" value="C">or(let i = 0; i > 0; i+=);
+            <br>
+            <input type="radio" name="q6" id="" value="D">for(let i = 0; i > 0; i=++);
+            <div><i class="fas fa-check"></i></div>
+            <div><i class="fas fa-times"></i></div>
+            <div class="show-answer"></div>
+        </div>
+        <br>
+        <div class="quiz">
+            <label for="">7</label>
+            What is the function of Array object that runs through each element of the Array?
+            <br>
+            <input type="radio" name="q7" id="" value="A">filter()
+            <br>
+            <input type="radio" name="q7" id="" value="B">forIn()
+            <br>
+            <input type="radio" name="q7" id="" value="C">concat()
+            <br>
+            <input type="radio" name="q7" id="" value="D">forEach()
+            <div><i class="fas fa-check"></i></div>
+            <div><i class="fas fa-times"></i></div>
+            <div class="show-answer"></div>
+        </div>
+        <br>
+        <div class="quiz">
+            <label for="">8</label>
+            What will be the output const one = 1;<br>if(one === 1)<br>{<br>console.log(true)<br>};<br>else<br>{<br>console.log(false)<br>};
+            <br>
+            <input type="radio" name="q8" id="" value="A">True
+            <br>
+            <input type="radio" name="q8" id="" value="B">False
+            <div><i class="fas fa-check"></i></div>
+            <div><i class="fas fa-times"></i></div>
+            <div class="show-answer"></div>
+        </div>
+        <br>
+        <div class="quiz">
+            <label for="">9</label>
+            What will be the result function addNum(num1, num2)<br>{<br>return num1 + num2 <br>} <br>addNum(2,4)
+            <br>
+            <input type="radio" name="q9" id="" value="A">8
+            <br>
+            <input type="radio" name="q9" id="" value="B">undefined
+            <br>
+            <input type="radio" name="q9" id="" value="C">6
+            <br>
+            <input type="radio" name="q9" id="" value="D">0
+            <div><i class="fas fa-check"></i></div>
+            <div><i class="fas fa-times"></i></div>
+            <div class="show-answer"></div>
+        </div>
+        <br>
+        <div class="quiz">
+            <label for="">10</label>
+            Which of the following function of String object returns the capitalized string?
+            <br>
+            <input type="radio" name="q10" id="" value="A">toLocaleUpperCase()
+            <br>
+            <input type="radio" name="q10" id="" value="B">toUpperCase()
+            <br>
+            <input type="radio" name="q10" id="" value="C">toString()
+            <br>
+            <input type="radio" name="q10" id="" value="D">subString()
+            <div><i class="fas fa-check"></i></div>
+            <div><i class="fas fa-times"></i></div>
+            <div class="show-answer"></div>
+        </div>
+    </div>
+    <div class="button">
+    <button class="submit">SUBMIT</button>
+    <div class="score"></div>
+    <a href="index.html" class="repeat">
+        REPEAT
+    </a>
+    </div>
+    </form>
+    <!-- Timing function -->
+    <div class="time"></div>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
